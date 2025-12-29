@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🗨️ Realtime Chat Application
 
-## Getting Started
+A modern realtime chat web application built with Next.js, React 19, Elysia, and Upstash Realtime.
+It supports low-latency messaging, scalable real-time communication, and a clean developer experience.
 
-First, run the development server:
+🚀 Features
 
-```bash
+⚡ Realtime messaging using Upstash Realtime
+
+🌐 Full-stack setup with Next.js App Router
+
+🔌 Elysia backend for lightweight, fast APIs
+
+📡 Redis-based pub/sub for message delivery
+
+🧠 Type-safe validation with Zod
+
+🧩 State management & caching via TanStack React Query
+
+🎨 Tailwind CSS for modern UI styling
+
+🔐 Unique message IDs using NanoID
+
+🕒 Time formatting with date-fns
+
+🛠️ Tech Stack
+Frontend
+
+Next.js 16
+
+React 19
+
+TypeScript
+
+Tailwind CSS
+
+@tanstack/react-query
+
+Backend
+
+Elysia
+
+@elysiajs/eden
+
+Upstash Realtime
+
+Upstash Redis
+
+Zod
+
+
+
+
+📦 Installation
+# Clone the repository
+git clone https://github.com/your-username/realtime_chat.git
+
+# Move into the project directory
+cd realtime_chat
+
+# Install dependencies
+npm install
+
+▶️ Running the App
+Development Mode
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+App runs at:
+👉 http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Production Build
+npm run build
+npm run start
 
-## Learn More
+🔄 Realtime Flow (How It Works)
 
-To learn more about Next.js, take a look at the following resources:
+User sends a message
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Backend (Elysia) validates the payload using Zod
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Message is published via Upstash Realtime
 
-## Deploy on Vercel
+All subscribed clients receive updates instantly
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+UI updates automatically via React Query
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧪 Scripts
+Command	Description
+npm run dev	Start development server
+npm run build	Create production build
+npm run start	Run production server
+npm run lint	Run ESLint
+📌 Future Improvements
+
+🔐 Authentication (JWT / OAuth)
+
+👥 User presence & typing indicators
+
+📎 File & image sharing
+
+🔔 Notifications
+
+📱 Mobile-first UI enhancements
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repo
+
+Create a feature branch
+
+Commit your changes
+
+Open a pull request
+
+📄 License
+
+This project is private and currently not licensed for public distribution.
+
+🙌 Acknowledgements
+
+Upstash for realtime infrastructure
+
+ElysiaJS for fast backend APIs
+
+Next.js & React for frontend power
